@@ -7,15 +7,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'pipeline" {
-    agent any  // Use any available agent
-
-    tools {
-        maven 'Maven'  // Ensure this matches the name configured in Jenkins
-    }
-    stages {
-        stage('Checkout') {
-            steps {
                 git branch: 'master', url: 'https://github.com/Varuni2005/6AMavenGuava.git'
             }
         }
